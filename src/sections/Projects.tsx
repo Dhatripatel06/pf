@@ -4,7 +4,7 @@ import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-28">
+    <section id="projects" className="relative py-16 sm:py-24 lg:py-28">
       <div className="container-px mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -17,7 +17,7 @@ export default function Projects() {
             <span className="w-1.5 h-1.5 rounded-full bg-primary" />
             Featured Work
           </span>
-          <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gradient-brand leading-[1]">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-gradient-brand leading-[1.05]">
             Selected Projects
           </h2>
           <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -34,21 +34,21 @@ export default function Projects() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               whileHover={{ y: -6 }}
-              className={`group relative glass-card rounded-3xl p-8 overflow-hidden ${
+              className={`group relative glass-card rounded-3xl p-6 sm:p-8 overflow-hidden ${
                 projects.length % 2 === 1 && i === projects.length - 1 ? "md:col-span-2" : ""
               }`}
             >
               <div className={`absolute -top-24 -right-24 w-64 h-64 rounded-full bg-gradient-to-br ${p.accent} blur-3xl opacity-40 group-hover:opacity-70 transition-opacity duration-700`} />
 
               <div className="relative">
-                <div className="flex items-start justify-between gap-4 mb-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 rounded-2xl glass grid place-items-center text-3xl">
+                <div className="flex items-start justify-between gap-3 mb-5 sm:mb-6 flex-wrap">
+                  <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl glass grid place-items-center text-2xl sm:text-3xl shrink-0">
                       {p.icon}
                     </div>
-                    <div>
-                      <h3 className="font-display text-2xl font-bold">{p.title}</h3>
-                      <p className="text-sm text-primary mt-0.5">{p.subtitle}</p>
+                    <div className="min-w-0">
+                      <h3 className="font-display text-xl sm:text-2xl font-bold truncate">{p.title}</h3>
+                      <p className="text-xs sm:text-sm text-primary mt-0.5 truncate">{p.subtitle}</p>
                     </div>
                   </div>
                   <span className="inline-flex items-center gap-1.5 text-[10px] font-medium px-3 py-1.5 rounded-full bg-primary/15 text-primary border border-primary/30 whitespace-nowrap">
@@ -57,7 +57,7 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <p className="text-sm text-muted-foreground leading-relaxed min-h-[80px]">
+                <p className="text-sm text-muted-foreground leading-relaxed sm:min-h-[80px]">
                   {p.description}
                 </p>
 

@@ -17,7 +17,7 @@ const iconBg: Record<string, string> = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-28">
+    <section id="skills" className="relative py-16 sm:py-24 lg:py-28">
       <div className="container-px mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -30,7 +30,7 @@ export default function Skills() {
             <span className="w-1.5 h-1.5 rounded-full bg-primary" />
             My Stack
           </span>
-          <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gradient-brand leading-[1]">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-gradient-brand leading-[1.05]">
             Skills &amp; Toolbox
           </h2>
           <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ export default function Skills() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
                 whileHover={{ y: -6 }}
-                className="group relative glass-card rounded-3xl p-7 overflow-hidden"
+                className="group relative glass-card rounded-3xl p-6 sm:p-7 overflow-hidden"
               >
                 <div className="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">

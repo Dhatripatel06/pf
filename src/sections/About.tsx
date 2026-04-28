@@ -4,7 +4,7 @@ import { GraduationCap, MapPin } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-28">
+    <section id="about" className="relative py-16 sm:py-24 lg:py-28">
       <div className="container-px mx-auto max-w-6xl">
         {/* Centered header */}
         <motion.div
@@ -18,7 +18,7 @@ export default function About() {
             <span className="w-1.5 h-1.5 rounded-full bg-primary" />
             About Me
           </span>
-          <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gradient-brand leading-[1]">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-gradient-brand leading-[1.05]">
             Crafting ideas into apps
           </h2>
           <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -33,7 +33,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass-card rounded-3xl p-8"
+            className="glass-card rounded-3xl p-6 sm:p-8"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-9 h-9 rounded-xl bg-primary/10 grid place-items-center text-primary">
@@ -82,9 +82,9 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
                 whileHover={{ y: -4 }}
-                className="glass-card rounded-3xl p-8 text-center flex flex-col justify-center min-h-[160px] hover:shadow-glow transition-shadow"
+                className="glass-card rounded-3xl p-6 sm:p-8 text-center flex flex-col justify-center min-h-[140px] sm:min-h-[160px] hover:shadow-glow transition-shadow"
               >
-                <div className="font-display text-5xl sm:text-6xl font-bold text-gradient-brand">
+                <div className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gradient-brand">
                   {s.value}
                 </div>
                 <div className="mt-3 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">

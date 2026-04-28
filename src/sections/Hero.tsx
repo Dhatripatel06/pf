@@ -7,7 +7,7 @@ const HeroScene = lazy(() => import("@/components/HeroScene"));
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-28 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
       {/* 3D background */}
       <div className="absolute inset-0 -z-10">
         <Suspense fallback={<div className="w-full h-full bg-gradient-hero" />}>
@@ -33,8 +33,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display font-bold leading-[0.95] tracking-tighter"
         >
-          <span className="block text-5xl sm:text-6xl lg:text-7xl text-foreground">Hi, I'm</span>
-          <span className="block mt-3 text-6xl sm:text-7xl lg:text-8xl xl:text-9xl text-gradient-brand">
+          <span className="block text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground">Hi, I'm</span>
+          <span className="block mt-2 sm:mt-3 text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-gradient-brand break-words">
             {profile.name}
           </span>
         </motion.h1>
@@ -74,7 +74,7 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-primary text-primary-foreground font-medium shadow-glow hover:shadow-elegant transition-all hover:-translate-y-0.5"
+            className="group inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-gradient-primary text-primary-foreground text-sm sm:text-base font-medium shadow-glow hover:shadow-elegant transition-all hover:-translate-y-0.5"
           >
             <Palette size={16} />
             View Projects
@@ -83,7 +83,7 @@ export default function Hero() {
           <a
             href={profile.resumeUrl}
             download
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full glass hover:bg-secondary/80 font-medium transition-all hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-full glass hover:bg-secondary/80 text-sm sm:text-base font-medium transition-all hover:-translate-y-0.5"
           >
             <Download size={16} />
             Download Resume
