@@ -1,8 +1,19 @@
 import { motion } from "framer-motion";
 import { skillGroups } from "@/lib/data";
-import { Smartphone, Server, Brain, Wrench } from "lucide-react";
+import { Smartphone, Database, Cpu, Palette, Cloud, Code2, type LucideIcon } from "lucide-react";
 
-const icons = [Smartphone, Server, Brain, Wrench];
+const iconMap: Record<string, LucideIcon> = {
+  Smartphone, Database, Cpu, Palette, Cloud, Code2,
+};
+
+const iconBg: Record<string, string> = {
+  Smartphone: "from-sky-500 to-blue-500",
+  Database: "from-indigo-500 to-violet-500",
+  Cpu: "from-emerald-500 to-teal-500",
+  Palette: "from-pink-500 to-rose-500",
+  Cloud: "from-cyan-500 to-sky-500",
+  Code2: "from-amber-500 to-orange-500",
+};
 
 export default function Skills() {
   return (
@@ -11,39 +22,46 @@ export default function Skills() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="max-w-2xl mb-16"
+          className="text-center mb-16"
         >
-          <span className="text-xs font-mono uppercase tracking-widest text-primary">02 — Skills</span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-gradient">
-            A modern mobile toolkit.
+          <span className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-[11px] font-mono uppercase tracking-widest text-primary mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+            My Stack
+          </span>
+          <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gradient-brand leading-[1]">
+            Skills &amp; Toolbox
           </h2>
-          <p className="mt-5 text-lg text-muted-foreground">
-            From pixel-perfect Flutter UI to Firebase backends and on-device ML.
+          <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+            A balanced mix across mobile, backend, AI and modern web.
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillGroups.map((group, i) => {
-            const Icon = icons[i];
+            const Icon = iconMap[group.icon] ?? Code2;
+            const grad = iconBg[group.icon] ?? "from-primary to-accent";
             return (
               <motion.div
                 key={group.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
                 whileHover={{ y: -6 }}
-                className="group relative glass-card rounded-3xl p-6 overflow-hidden"
+                className="group relative glass-card rounded-3xl p-7 overflow-hidden"
               >
-                <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-primary/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-primary grid place-items-center text-primary-foreground shadow-glow mb-5">
-                    <Icon size={22} />
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${grad} grid place-items-center text-white shadow-glow mb-6`}>
+                    <Icon size={24} />
                   </div>
-                  <h3 className="font-display text-lg font-semibold mb-4">{group.title}</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <h3 className="font-display text-xl font-semibold">{group.title}</h3>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground mt-1.5 mb-5">
+                    {group.skills.length} Technologies
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
                     {group.skills.map((s) => (
                       <span
                         key={s}

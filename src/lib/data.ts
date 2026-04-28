@@ -23,18 +23,32 @@ export const stats = [
 export const skillGroups = [
   {
     title: "Mobile Development",
-    skills: ["Flutter", "Dart", "GetX", "Riverpod", "Provider", "Bloc", "Android/iOS Deploy"],
+    icon: "Smartphone",
+    skills: ["Flutter", "Dart", "GetX", "Riverpod", "Provider", "Flutter Bloc", "Android/iOS"],
   },
   {
     title: "Backend & APIs",
-    skills: ["Firebase", "REST APIs", "Node.js", "Express", "MongoDB", "JWT Auth", "Socket.io"],
+    icon: "Database",
+    skills: ["REST APIs", "Firebase", "Node.js", "Express", "MongoDB", "JWT Auth", "Socket.io"],
   },
   {
-    title: "AI / ML",
+    title: "AI / ML Integrations",
+    icon: "Cpu",
     skills: ["ONNX Runtime", "Google ML Kit", "TensorFlow Lite", "Generative AI", "Prompt Engineering"],
   },
   {
+    title: "Design & UX",
+    icon: "Palette",
+    skills: ["Figma", "Material Design", "Glassmorphism", "Micro-interactions", "Prototyping"],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: "Cloud",
+    skills: ["Firebase Hosting", "Vercel", "GitHub Actions", "Play Store", "App Store"],
+  },
+  {
     title: "Web & Tools",
+    icon: "Code2",
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub", "Postman", "VS Code"],
   },
 ];
@@ -42,26 +56,32 @@ export const skillGroups = [
 export const projects = [
   {
     title: "MindHeal",
-    tag: "Mental Health • AI",
+    subtitle: "AI Mental Health Companion",
+    icon: "🧠",
+    award: "Award Winner 2025",
     description:
-      "Cross-platform Flutter app for mental wellness. Multi-modal mood detection via facial expressions & vocal tone using ONNX and Google ML Kit, with a Generative AI advisor and interactive chatbot.",
-    stack: ["Flutter", "Dart", "ONNX", "ML Kit", "GenAI"],
+      "Cross-platform Flutter app that detects emotional distress via multi-modal mood analysis (facial expression + vocal tone) and connects users with a Generative AI counselor & chatbot.",
+    stack: ["Flutter", "ONNX", "Google ML Kit", "GenAI", "Firebase"],
     accent: "from-sky-500/30 to-cyan-400/20",
   },
   {
     title: "AgreeCare",
-    tag: "IoT • Agriculture",
+    subtitle: "Smart Agriculture IoT",
+    icon: "🌱",
+    award: "Award Winner 2024",
     description:
-      "IoT-based smart agriculture system. Android app integrated with Firebase for real-time data, disease prediction, automated irrigation via NodeMCU & Arduino, plus government scheme analytics.",
-    stack: ["Flutter", "Firebase", "IoT", "NodeMCU"],
+      "IoT-powered Flutter app that monitors soil, temperature & humidity in real time via Firebase. Automates irrigation (NodeMCU + Arduino), predicts plant disease, and delivers scheme updates to farmers.",
+    stack: ["Flutter", "Firebase", "NodeMCU", "Arduino", "Android"],
     accent: "from-emerald-400/30 to-teal-400/20",
   },
   {
     title: "Masjid 3D",
-    tag: "Graphics • C++",
+    subtitle: "Interactive 3D Simulation",
+    icon: "🕌",
+    award: "Featured",
     description:
       "Interactive 3D simulation of the Al-Aqsa Mosque using C++ and OpenGL. Lighting, texture mapping, day/night modes, and smooth real-time camera navigation for immersive architectural visualization.",
-    stack: ["C++", "OpenGL", "Graphics"],
+    stack: ["C++", "OpenGL", "Graphics", "GLUT"],
     accent: "from-amber-400/30 to-orange-400/20",
   },
 ];
@@ -94,6 +114,14 @@ export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
+  { label: "3D", href: "#home" },
+  { label: "Resume", href: "#experience" },
   { label: "Contact", href: "#contact" },
+];
+
+export const stats2 = [
+  { value: "8+", label: "Projects Built" },
+  { value: "25+", label: "Technologies" },
+  { value: "2", label: "Awards Won" },
+  { value: "4", label: "Certifications" },
 ];
