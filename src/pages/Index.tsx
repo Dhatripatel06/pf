@@ -1,16 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Hero from "@/sections/Hero";
+import About from "@/sections/About";
+import Skills from "@/sections/Skills";
+import Projects from "@/sections/Projects";
+import Experience from "@/sections/Experience";
+import Contact from "@/sections/Contact";
+import { useEffect } from "react";
+import { profile } from "@/lib/data";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useEffect(() => {
+    document.title = `${profile.name} — Flutter Developer Portfolio`;
+    const meta = document.querySelector('meta[name="description"]') || document.createElement("meta");
+    meta.setAttribute("name", "description");
+    meta.setAttribute("content", `${profile.name} — Flutter developer crafting beautiful, scalable mobile apps with Flutter, Dart, GetX & Firebase.`);
+    if (!meta.parentElement) document.head.appendChild(meta);
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="relative min-h-screen overflow-x-clip">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
