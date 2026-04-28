@@ -35,10 +35,10 @@ export default function Contact() {
           className="max-w-2xl mb-16"
         >
           <span className="text-xs font-mono uppercase tracking-widest text-primary">05 — Contact</span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-gradient">
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gradient">
             Let's build something great.
           </h2>
-          <p className="mt-5 text-lg text-muted-foreground">
+          <p className="mt-5 text-base sm:text-lg text-muted-foreground">
             Open to internships, freelance, or full-time Flutter roles. I usually reply within a day.
           </p>
         </motion.div>
@@ -49,7 +49,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 glass-card rounded-3xl p-8 flex flex-col justify-between"
+            className="lg:col-span-2 glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between"
           >
             <div className="space-y-5">
               <a href={`mailto:${profile.email}`} className="flex items-start gap-3 group">
@@ -100,7 +100,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="lg:col-span-3 glass-card rounded-3xl p-8 space-y-5"
+            className="lg:col-span-3 glass-card rounded-3xl p-6 sm:p-8 space-y-5"
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
@@ -136,7 +136,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={sending}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-primary text-primary-foreground font-medium shadow-glow hover:shadow-elegant transition-all hover:-translate-y-0.5 disabled:opacity-60"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-gradient-primary text-primary-foreground font-medium shadow-glow hover:shadow-elegant transition-all hover:-translate-y-0.5 disabled:opacity-60"
             >
               <Send size={16} />
               {sending ? "Sending…" : "Send Message"}

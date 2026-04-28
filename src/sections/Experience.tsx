@@ -14,8 +14,8 @@ export default function Experience() {
           className="max-w-2xl mb-16"
         >
           <span className="text-xs font-mono uppercase tracking-widest text-primary">04 — Journey</span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold text-gradient">
-            Experience & Recognition.
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gradient">
+            Experience &amp; Recognition.
           </h2>
         </motion.div>
 
