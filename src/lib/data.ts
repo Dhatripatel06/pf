@@ -3,11 +3,11 @@ export const profile = {
   role: "Flutter Developer",
   tagline: "I build beautiful and scalable mobile apps",
   email: "dhatripatel67@gmail.com",
-  phone: "+91 63555 06411",
+  phone: "+916355506411",
   location: "Bhavnagar, Gujarat, India",
-  github: "https://github.com/",
-  linkedin: "https://www.linkedin.com/",
-  website: "#",
+  github: "https://github.com/Dhatripatel06",
+  linkedin: "https://www.linkedin.com/in/dhatri-patel-426846322",
+  website: "https://v0-portfolio-website-silk-sigma.vercel.app/",
   resumeUrl: "/dhatri-paladiya-resume.pdf",
   summary:
     "Computer Engineering student pursuing BCA at SSCCS, Bhavnagar. Passionate about crafting clean, scalable Flutter apps with thoughtful UI/UX. Strong foundation in mobile development, REST APIs, Firebase and modern state management with GetX.",
@@ -63,6 +63,8 @@ export const projects = [
       "Cross-platform Flutter app that detects emotional distress via multi-modal mood analysis (facial expression + vocal tone) and connects users with a Generative AI counselor & chatbot.",
     stack: ["Flutter", "ONNX", "Google ML Kit", "GenAI", "Firebase"],
     accent: "from-sky-500/30 to-cyan-400/20",
+    demo: "https://drive.google.com/file/d/1LqqJLJpwOlUpJsZKSKQMzcm35qwenmpz/view?usp=sharing",
+    source: "https://github.com/Dhatripatel06",
   },
   {
     title: "AgreeCare",
@@ -73,6 +75,8 @@ export const projects = [
       "IoT-powered Flutter app that monitors soil, temperature & humidity in real time via Firebase. Automates irrigation (NodeMCU + Arduino), predicts plant disease, and delivers scheme updates to farmers.",
     stack: ["Flutter", "Firebase", "NodeMCU", "Arduino", "Android"],
     accent: "from-emerald-400/30 to-teal-400/20",
+    demo: "https://drive.google.com/file/d/1rQqaEvDNxxFuvWvjv9LHzea5fUYvreR8/view?usp=sharing",
+    source: "https://github.com/hetvidudhela/Agricare",
   },
   {
     title: "Masjid 3D",
@@ -83,6 +87,8 @@ export const projects = [
       "Interactive 3D simulation of the Al-Aqsa Mosque using C++ and OpenGL. Lighting, texture mapping, day/night modes, and smooth real-time camera navigation for immersive architectural visualization.",
     stack: ["C++", "OpenGL", "Graphics", "GLUT"],
     accent: "from-amber-400/30 to-orange-400/20",
+    demo: "https://drive.google.com/file/d/1ZptGwISEQo75evCEJpxaTr312vE6bEGp/view?usp=sharing",
+    source: "https://github.com/Dhatripatel06",
   },
 ];
 
@@ -96,11 +102,26 @@ export const experience = [
 ];
 
 export const certifications = [
-  "AI Foundations Associate",
-  "Oracle Certified Generative AI Professional",
-  "Summer Analytics 2025",
-  "Salesforce Certified",
-  "Front-End Developer Internship",
+  {
+    name: "AI Foundations Associate",
+    url: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=DF8C64BD7F6F8A01E7054216FE3DCF500FF14185A741F5976264A9F6BB25A31D",
+  },
+  {
+    name: "Oracle Certified Generative AI Professional",
+    url: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=14B28E2C8840F7237450363C0DF05EB473E02E29F2C26EDBF77FD940841CCD8A",
+  },
+  {
+    name: "Summer Analytics 2025",
+    url: "https://media.geeksforgeeks.org/auth-certificates/1751999400/feea77551e8072f275dfd73771c5e466.png",
+  },
+  {
+    name: "Salesforce Certified",
+    url: "https://certificate.givemycertificate.com/c/2887752f-d313-4e9e-a368-f9c39b7bf2e4",
+  },
+  {
+    name: "Front-End Developer Internship",
+    url: "https://certificate.givemycertificate.com/c/2887752f-d313-4e9e-a368-f9c39b7bf2e4",
+  },
 ];
 
 export const education = {
