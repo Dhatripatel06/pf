@@ -79,17 +79,20 @@ export default function Experience() {
             </div>
             <div className="grid gap-3">
               {certifications.map((c, i) => (
-                <motion.div
-                  key={c}
+                <motion.a
+                  key={c.name}
+                  href={c.url}
+                  target="_blank"
+                  rel="noreferrer"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.07 }}
                   className="group flex items-center justify-between p-4 rounded-2xl bg-secondary/40 border border-border/50 hover:border-primary/40 hover:bg-secondary/60 transition-all"
                 >
-                  <span className="text-sm">{c}</span>
-                  <span className="text-[10px] font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">VERIFIED</span>
-                </motion.div>
+                  <span className="text-sm">{c.name}</span>
+                  <span className="text-[10px] font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">VIEW ↗</span>
+                </motion.a>
               ))}
             </div>
           </motion.div>
