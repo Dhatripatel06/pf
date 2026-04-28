@@ -4,7 +4,7 @@ import { GraduationCap, MapPin } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-28">
+    <section id="about" className="relative py-16 sm:py-24 lg:py-28">
       <div className="container-px mx-auto max-w-6xl">
         {/* Centered header */}
         <motion.div

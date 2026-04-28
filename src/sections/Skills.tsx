@@ -17,7 +17,7 @@ const iconBg: Record<string, string> = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-28">
+    <section id="skills" className="relative py-16 sm:py-24 lg:py-28">
       <div className="container-px mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

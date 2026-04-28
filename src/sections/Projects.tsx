@@ -4,7 +4,7 @@ import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-28">
+    <section id="projects" className="relative py-16 sm:py-24 lg:py-28">
       <div className="container-px mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
