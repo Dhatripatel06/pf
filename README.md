@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Dhatri Paladiya — Portfolio
 
 TODO: Document your project here

@@ -28,21 +28,6 @@ function AnimatedSphere() {
   );
 }
 
-function OrbitRing({ radius, color, speed }: { radius: number; color: string; speed: number }) {
-  const ref = useRef<THREE.Mesh>(null);
-  useFrame((state) => {
-    if (!ref.current) return;
-    ref.current.rotation.x = state.clock.elapsedTime * speed;
-    ref.current.rotation.z = state.clock.elapsedTime * speed * 0.5;
-  });
-  return (
-    <mesh ref={ref}>
-      <torusGeometry args={[radius, 0.008, 16, 100]} />
-      <meshBasicMaterial color={color} transparent opacity={0.5} />
-    </mesh>
-  );
-}
-
 export default function HeroScene() {
   return (
     <Canvas
@@ -55,8 +40,6 @@ export default function HeroScene() {
         <directionalLight position={[5, 5, 5]} intensity={1.2} color="#7dd3fc" />
         <pointLight position={[-5, -5, -5]} intensity={0.8} color="#0ea5e9" />
         <AnimatedSphere />
-        <OrbitRing radius={2.2} color="#38bdf8" speed={0.3} />
-        <OrbitRing radius={2.6} color="#0ea5e9" speed={-0.2} />
         <Stars radius={50} depth={40} count={1500} factor={3} saturation={0} fade speed={0.5} />
       </Suspense>
     </Canvas>

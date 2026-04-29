@@ -63,8 +63,8 @@ export const projects = [
       "Cross-platform Flutter app that detects emotional distress via multi-modal mood analysis (facial expression + vocal tone) and connects users with a Generative AI counselor & chatbot.",
     stack: ["Flutter", "ONNX", "Google ML Kit", "GenAI", "Firebase"],
     accent: "from-sky-500/30 to-cyan-400/20",
-    demo: "https://drive.google.com/file/d/1LqqJLJpwOlUpJsZKSKQMzcm35qwenmpz/view?usp=sharing",
-    source: "https://github.com/Dhatripatel06",
+    demo: "https://drive.google.com/file/d/1rQqaEvDNxxFuvWvjv9LHzea5fUYvreR8/view?usp=sharing",
+    source: "https://github.com/Dhatripatel06/MindHeal_org",
   },
   {
     title: "AgreeCare",
@@ -75,7 +75,7 @@ export const projects = [
       "IoT-powered Flutter app that monitors soil, temperature & humidity in real time via Firebase. Automates irrigation (NodeMCU + Arduino), predicts plant disease, and delivers scheme updates to farmers.",
     stack: ["Flutter", "Firebase", "NodeMCU", "Arduino", "Android"],
     accent: "from-emerald-400/30 to-teal-400/20",
-    demo: "https://drive.google.com/file/d/1rQqaEvDNxxFuvWvjv9LHzea5fUYvreR8/view?usp=sharing",
+    demo: "https://github.com/hetvidudhela/Agricare",
     source: "https://github.com/hetvidudhela/Agricare",
   },
   {
@@ -87,8 +87,8 @@ export const projects = [
       "Interactive 3D simulation of the Al-Aqsa Mosque using C++ and OpenGL. Lighting, texture mapping, day/night modes, and smooth real-time camera navigation for immersive architectural visualization.",
     stack: ["C++", "OpenGL", "Graphics", "GLUT"],
     accent: "from-amber-400/30 to-orange-400/20",
-    demo: "https://drive.google.com/file/d/1ZptGwISEQo75evCEJpxaTr312vE6bEGp/view?usp=sharing",
-    source: "https://github.com/Dhatripatel06",
+    demo: "https://drive.google.com/file/d/1LqqJLJpwOlUpJsZKSKQMzcm35qwenmpz/view?usp=sharing",
+    source: "https://github.com/ubeduk/masjid-e-aqsa",
   },
 ];
 
@@ -120,7 +120,7 @@ export const certifications = [
   },
   {
     name: "Front-End Developer Internship",
-    url: "https://certificate.givemycertificate.com/c/2887752f-d313-4e9e-a368-f9c39b7bf2e4",
+    url: "https://drive.google.com/file/d/1ZptGwISEQo75evCEJpxaTr312vE6bEGp/view?usp=sharing",
   },
 ];
 
@@ -135,7 +135,6 @@ export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "3D", href: "#home" },
   { label: "Resume", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];

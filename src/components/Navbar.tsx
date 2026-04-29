@@ -26,11 +26,13 @@ export default function Navbar() {
       <div className="container-px mx-auto max-w-7xl">
         <div className={`glass rounded-2xl flex items-center justify-between px-5 py-3 transition-all ${scrolled ? "shadow-soft" : ""}`}>
           <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-primary grid place-items-center font-display font-bold text-primary-foreground shadow-glow">
-              D
-            </div>
+            <img
+              src="/logopf.jpeg"
+              alt={`${profile.name} logo`}
+              className="w-9 h-9 rounded-full object-cover shadow-glow ring-2 ring-primary/30"
+            />
             <span className="font-display font-semibold tracking-tight hidden sm:inline">
-              {profile.name.split(" ")[0]}<span className="text-primary">.</span>
+              D#@T₹!
             </span>
           </a>
 
