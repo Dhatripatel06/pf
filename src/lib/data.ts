@@ -60,7 +60,7 @@ export const projects = [
     icon: "🧠",
     award: "Award Winner 2025",
     description:
-      "Cross-platform Flutter app that detects emotional distress via multi-modal mood analysis (facial expression + vocal tone) and connects users with a Generative AI counselor & chatbot.",
+      "A cross-platform Flutter application for mental health and mindfulness. the Aim of app is control Suicide rates which is rise globally. There is a critical need for a system that can detect early signs of emotional distress, provide instant support, and connect individuals with a counsellor-like companion before the situation escalates. Features: It provides multi-modal mood detection by analyzing user BPM & sentiment from both facial expressions (image)and vocal tone (audio). The app leverages AI/ML models (like ONNX and Google ML Kit) for this analysis. Based on the detected mood, a Generative AI-powered adviser & app also includes an interactive chatbot for on-demand support.",
     stack: ["Flutter", "ONNX", "Google ML Kit", "GenAI", "Firebase"],
     accent: "from-sky-500/30 to-cyan-400/20",
     demo: "https://drive.google.com/file/d/1rQqaEvDNxxFuvWvjv9LHzea5fUYvreR8/view?usp=sharing",
@@ -72,7 +72,7 @@ export const projects = [
     icon: "🌱",
     award: "Award Winner 2024",
     description:
-      "IoT-powered Flutter app that monitors soil, temperature & humidity in real time via Firebase. Automates irrigation (NodeMCU + Arduino), predicts plant disease, and delivers scheme updates to farmers.",
+      "Developed an IoT-based smart agriculture system to monitor and automate plant growth conditions using sensors for soil moisture, temperature, and humidity. Collaborated with a senior to build an Android app integrated with Firebase for real-time data tracking, disease prediction, and weather insights. Implemented automated irrigation using NodeMCU and Arduino, improving water efficiency and crop management. The system also provides farmers with analytics, government scheme access, and agriculture-related updates. ",
     stack: ["Flutter", "Firebase", "NodeMCU", "Arduino", "Android"],
     accent: "from-emerald-400/30 to-teal-400/20",
     demo: "https://github.com/hetvidudhela/Agricare",
@@ -82,9 +82,9 @@ export const projects = [
     title: "Masjid 3D",
     subtitle: "Interactive 3D Simulation",
     icon: "🕌",
-    award: "Featured",
+    award: "Freelance Work",
     description:
-      "Interactive 3D simulation of the Al-Aqsa Mosque using C++ and OpenGL. Lighting, texture mapping, day/night modes, and smooth real-time camera navigation for immersive architectural visualization.",
+      "Developed an interactive 3D simulation of the Al-Aqsa Mosque using C++ and OpenGL, enabling users to explore a realistic virtual environment. Implemented advanced graphics features such as lighting, texture mapping, and camera controls to enhance visual accuracy and user experience. Designed multiple viewing modes, including day/night simulation, with smooth navigation and real-time interaction. Focused on optimizing rendering performance and creating an immersive architectural visualization.",
     stack: ["C++", "OpenGL", "Graphics", "GLUT"],
     accent: "from-amber-400/30 to-orange-400/20",
     demo: "https://drive.google.com/file/d/1LqqJLJpwOlUpJsZKSKQMzcm35qwenmpz/view?usp=sharing",
