@@ -75,14 +75,14 @@ export const projects = [
       "Developed an IoT-based smart agriculture system to monitor and automate plant growth conditions using sensors for soil moisture, temperature, and humidity. Collaborated with a senior to build an Android app integrated with Firebase for real-time data tracking, disease prediction, and weather insights. Implemented automated irrigation using NodeMCU and Arduino, improving water efficiency and crop management. The system also provides farmers with analytics, government scheme access, and agriculture-related updates. ",
     stack: ["Flutter", "Firebase", "NodeMCU", "Arduino", "Android"],
     accent: "from-emerald-400/30 to-teal-400/20",
-    demo: "https://github.com/hetvidudhela/Agricare",
+    demo: "",
     source: "https://github.com/hetvidudhela/Agricare",
   },
   {
     title: "Masjid 3D",
     subtitle: "Interactive 3D Simulation",
     icon: "🕌",
-    award: "Freelance Work",
+    award: "freelance",
     description:
       "Developed an interactive 3D simulation of the Al-Aqsa Mosque using C++ and OpenGL, enabling users to explore a realistic virtual environment. Implemented advanced graphics features such as lighting, texture mapping, and camera controls to enhance visual accuracy and user experience. Designed multiple viewing modes, including day/night simulation, with smooth navigation and real-time interaction. Focused on optimizing rendering performance and creating an immersive architectural visualization.",
     stack: ["C++", "OpenGL", "Graphics", "GLUT"],

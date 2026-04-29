@@ -32,7 +32,7 @@ export default function Navbar() {
               className="w-9 h-9 rounded-full object-cover shadow-glow ring-2 ring-primary/30"
             />
             <span className="font-display font-semibold tracking-tight hidden sm:inline">
-              D#@T₹!
+              DHATRI
             </span>
           </a>
 

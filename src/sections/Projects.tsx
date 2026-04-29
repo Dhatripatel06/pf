@@ -73,14 +73,16 @@ export default function Projects() {
                 </div>
 
                 <div className="flex gap-3 mt-7">
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs px-4 py-2.5 rounded-full bg-gradient-primary text-primary-foreground font-medium hover:shadow-glow transition-all hover:-translate-y-0.5"
-                  >
-                    <ExternalLink size={13} /> Live Demo
-                  </a>
+                  {p.demo && (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs px-4 py-2.5 rounded-full bg-gradient-primary text-primary-foreground font-medium hover:shadow-glow transition-all hover:-translate-y-0.5"
+                    >
+                      <ExternalLink size={13} /> Live Demo
+                    </a>
+                  )}
                   <a
                     href={p.source}
                     target="_blank"
