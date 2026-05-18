@@ -50,7 +50,7 @@ export default function Contact() {
             Let's build something great.
           </h2>
           <p className="mt-5 text-base sm:text-lg text-muted-foreground">
-            Open to internships, freelance, or full-time Flutter roles. I usually reply within a day.
+            Open to internships, freelance, or full-time Flutter & frontend developer roles.I usually reply within a day.
           </p>
         </motion.div>
 

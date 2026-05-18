@@ -48,14 +48,6 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <a
-            href={profile.resumeUrl}
-            download
-            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-gradient-primary text-primary-foreground shadow-glow hover:shadow-elegant transition-all hover:-translate-y-0.5"
-          >
-            Resume
-          </a>
-
           <button
             onClick={() => setOpen((v) => !v)}
             className="md:hidden p-2 rounded-lg hover:bg-secondary"
@@ -83,13 +75,7 @@ export default function Navbar() {
                   {l.label}
                 </a>
               ))}
-              <a
-                href={profile.resumeUrl}
-                download
-                className="mt-2 px-4 py-3 rounded-xl text-sm font-medium bg-gradient-primary text-primary-foreground text-center"
-              >
-                Download Resume
-              </a>
+
             </motion.div>
           )}
         </AnimatePresence>

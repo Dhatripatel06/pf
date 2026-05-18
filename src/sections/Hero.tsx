@@ -24,7 +24,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs text-muted-foreground mb-10"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-primary animate-glow-pulse" />
-          Available for Flutter Opportunities
+          Available for Flutter & Frontend Developer Opportunities
         </motion.div>
 
         <motion.h1
@@ -81,12 +81,8 @@ export default function Hero() {
             <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
           <a
-            href={profile.resumeUrl}
-            download
-            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-full glass hover:bg-secondary/80 text-sm sm:text-base font-medium transition-all hover:-translate-y-0.5"
           >
-            <Download size={16} />
-            Download Resume
+            
           </a>
         </motion.div>
       </div>

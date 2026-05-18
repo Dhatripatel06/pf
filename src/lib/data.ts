@@ -1,20 +1,20 @@
 export const profile = {
-  name: "Dhatri Paladiya",
+  name: "Dhatri Patel",
   role: "Flutter Developer",
   tagline: "I build beautiful and scalable mobile apps",
   email: "dhatripatel67@gmail.com",
   phone: "+916355506411",
-  location: "Bhavnagar, Gujarat, India",
+  location: "Bhavnagar / Ahemdabad, Gujarat, India",
   github: "https://github.com/Dhatripatel06",
   linkedin: "https://www.linkedin.com/in/dhatri-patel-426846322",
-  website: "https://v0-portfolio-website-silk-sigma.vercel.app/",
+  website: "https://dhatripatel.vercel.app/",
   resumeUrl: "/dhatri-paladiya-resume.pdf",
   summary:
     "Computer Engineering student pursuing BCA at SSCCS, Bhavnagar. Passionate about crafting clean, scalable Flutter apps with thoughtful UI/UX. Strong foundation in mobile development, REST APIs, Firebase and modern state management with GetX.",
 };
 
 export const stats = [
-  { label: "Projects Completed", value: 6 },
+  { label: "Projects Completed", value: 9 },
   { label: "Technologies Learned", value: 20 },
   { label: "Certifications", value: 5 },
   { label: "Awards Won", value: 2 },
@@ -24,22 +24,22 @@ export const skillGroups = [
   {
     title: "Mobile Development",
     icon: "Smartphone",
-    skills: ["Flutter", "Dart", "GetX", "Riverpod", "Provider", "Flutter Bloc", "Android/iOS"],
+    skills: ["Flutter", "Dart", "Android Studio", "Firebase", "REST APIs", "JSON Parsing", "Android/iOS", "BLoC/Cubit", "GetX", "Riverpod", "Provider"],
+  },
+  {
+    title: "Frontend & UI/UX",
+    icon: "Palette",
+    skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript (ES6+)", "HTML5", "CSS3", "Responsive UI", "Pixel-Perfect Design", "Custom Widgets", "Animations", "Material Design", "Figma"],
   },
   {
     title: "Backend & APIs",
     icon: "Database",
-    skills: ["REST APIs", "Firebase", "Node.js", "Express", "MongoDB", "JWT Auth", "Socket.io"],
+    skills: ["Firebase Firestore", "Firebase Auth", "Firebase Storage", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT Authentication", "Socket.io"],
   },
   {
-    title: "AI / ML Integrations",
+    title: "AI / ML Integration",
     icon: "Cpu",
-    skills: ["ONNX Runtime", "Google ML Kit", "TensorFlow Lite", "Generative AI", "Prompt Engineering"],
-  },
-  {
-    title: "Design & UX",
-    icon: "Palette",
-    skills: ["Figma", "Material Design", "Glassmorphism", "Micro-interactions", "Prototyping"],
+    skills: ["ONNX Runtime", "TensorFlow Lite", "Google ML Kit", "Generative AI", "Machine Learning", "Prompt Engineering", "Python"],
   },
   {
     title: "Cloud & DevOps",
@@ -47,9 +47,9 @@ export const skillGroups = [
     skills: ["Firebase Hosting", "Vercel", "GitHub Actions", "Play Store", "App Store"],
   },
   {
-    title: "Web & Tools",
+    title: "Tools & Architecture",
     icon: "Code2",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "GitHub", "Postman", "VS Code"],
+    skills: ["Git", "GitHub", "VS Code", "Postman", "SQL", "Java", "Clean Architecture", "Async Programming", "Streams", "API Integration", "App Deployment"],
   },
 ];
 
@@ -79,7 +79,7 @@ export const projects = [
     source: "https://github.com/hetvidudhela/Agricare",
   },
   {
-    title: "Masjid 3D",
+    title: "Masjid",
     subtitle: "Interactive 3D Simulation",
     icon: "🕌",
     award: "freelance",
@@ -89,6 +89,42 @@ export const projects = [
     accent: "from-amber-400/30 to-orange-400/20",
     demo: "https://drive.google.com/file/d/1LqqJLJpwOlUpJsZKSKQMzcm35qwenmpz/view?usp=sharing",
     source: "https://github.com/ubeduk/masjid-e-aqsa",
+  },
+  {
+    title: "Shiftly",
+    subtitle: "Smart Shift Management Platform",
+    icon: "⏰",
+    award: "freelance",
+    description:
+      "Production-focused cross-platform Flutter application for freelance shift management. Enables efficient daily work scheduling, shift tracking, work hour calculation, and earnings management. Built with offline-first functionality, secure Google authentication, responsive layouts, and real-time Firebase Firestore synchronization across Android, iOS, Web, Windows, and macOS. Features break-time deduction support, multi-device sync, and enterprise-level architecture with CI/CD setup.",
+    stack: ["Flutter", "Dart", "Firebase", "Firestore", "GetX", "Hive", "Google Sign-In", "Codemagic", "REST APIs"],
+    accent: "from-violet-400/30 to-purple-400/20",
+    demo: "https://drive.google.com/file/d/1vF_Ej7Jjzy8C7JW5qqbZ49qwCPWeUw7r/view?usp=sharing",
+    source: "https://github.com/Dhatripatel06/shift_manager",
+  },
+  {
+    title: "JobZee",
+    subtitle: "Full-Stack Job Portal",
+    icon: "💼",
+    award: "freelance",
+    description:
+      "Full-stack MERN job portal with responsive frontend interfaces using React.js and modern component-based architecture. Features dynamic job listings, employer dashboards, and comprehensive application management workflows. Integrated REST APIs and real-time messaging using Socket.io for seamless communication between job seekers and employers. Optimized user experience with responsive layouts and interactive UI components across all devices.",
+    stack: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "REST APIs", "Tailwind CSS"],
+    accent: "from-blue-400/30 to-cyan-400/20",
+    demo: "https://jobzee-two.vercel.app/",
+    source: "https://github.com/Dhatripatel06/jobzee",
+  },
+  {
+    title: "LearnNova",
+    subtitle: "eLearning Platform",
+    icon: "📚",
+    award: "Hackathon Finalist 2026",
+    description:
+      "Finalist project in Odoo x GVP Hackathon. Developed responsive frontend interfaces using React.js and Tailwind CSS with reusable UI components. Integrated REST APIs for dynamic content rendering and built interactive dashboards with role-based user experiences. Implemented features for students and instructors with seamless course management. Collaborated in a fast-paced hackathon development environment to deliver a production-ready eLearning solution.",
+    stack: ["React.js", "Tailwind CSS", "REST APIs", "JavaScript", "UI Components"],
+    accent: "from-yellow-400/30 to-orange-400/20",
+    demo: "",
+    source: "https://github.com/isha-gohel181/Learn_nova",
   },
 ];
 
@@ -135,7 +171,7 @@ export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Resume", href: "#experience" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
