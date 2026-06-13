@@ -99,7 +99,7 @@ export const projects = [
       "Production-focused cross-platform Flutter application for freelance shift management. Enables efficient daily work scheduling, shift tracking, work hour calculation, and earnings management. Built with offline-first functionality, secure Google authentication, responsive layouts, and real-time Firebase Firestore synchronization across Android, iOS, Web, Windows, and macOS. Features break-time deduction support, multi-device sync, and enterprise-level architecture with CI/CD setup.",
     stack: ["Flutter", "Dart", "Firebase", "Firestore", "GetX", "Hive", "Google Sign-In", "Codemagic", "REST APIs"],
     accent: "from-violet-400/30 to-purple-400/20",
-    demo: "https://drive.google.com/file/d/1vF_Ej7Jjzy8C7JW5qqbZ49qwCPWeUw7r/view?usp=sharing",
+    demo: "https://drive.google.com/file/d/15le0Niig1h5oRRX2tjdDT4fhTGUwMV0C/view?usp=sharing",
     source: "https://github.com/Dhatripatel06/shift_manager",
   },
   {
